@@ -15,8 +15,12 @@
 */
 
 //Code here
+const me = {
+  name: "Adam",
+  age: 31
+}
 
-
+alert(me.name);
 
 ////////// PROBLEM 2 //////////
 
@@ -26,7 +30,15 @@
 */
 
 //Code here
+const favoriteThings = {
+  band: "Iron Maiden",
+  food: "Hot Dog",
+  person: "Mom",
+  book: "Animal farm",
+  movie: "The Big Labowski",
+  holiday: "Halloween",
 
+}
 
 
 /*
@@ -35,7 +47,8 @@
 
 //Code here
 
-
+favoriteThings.car = "VW";
+favoriteThings.brand = "No brand";
 
 /*
   Now change the value of the food key in your favoriteThings object to be 'Chicken Nuggets' and change the value of the book key in your favoriteThings object to be 'Harry Potter'.
@@ -43,7 +56,8 @@
 
 //Code here
 
-
+favoriteThings.food = 'Chicken Nuggets';
+favoriteThings.book = 'Harry Potter';
 
 ////////// PROBLEM 3 //////////
 
@@ -56,6 +70,11 @@
 */
 
 //Code here
+const backPack = {};
+
+const item = "firstPocket";
+backPack["firstPocket"] = "chapstick";
+backPack.color = "black";
 
 
 
@@ -65,7 +84,7 @@
 
 //Code here
 
-
+alert(backPack);
 
 /*
 You probably noticed that it just alerted [object Object].
@@ -75,7 +94,7 @@ Instead, console.log your whole backPack object and then check out the console.
 
 //Code here
 
-
+console.log(backPack);
 
 ////////// PROBLEM 4 //////////
 
@@ -97,7 +116,8 @@ var user2 = {
 */
 
 //Code Here
-
+user2.name = 'Tyler S. McGinnis';
+user2.email = 'tyler.mcginnis@devmounta.in';
 
 
 
@@ -120,7 +140,7 @@ var user2 = {
 */
 
 //Code Here
-
+const methodCollection = {};
 
 
 /*
@@ -129,7 +149,12 @@ var user2 = {
 */
 
 //Code Here
-
+methodCollection.alertHello = function() {
+  alert('hello');
+};
+methodCollection.logHello = function() {
+  console.log('hello');
+};
 
 
 /*
@@ -137,7 +162,8 @@ var user2 = {
 */
 
 //Code Here
-
+methodCollection.alertHello();
+methodCollection.logHello();
 
 
 ////////// PROBLEM 6 //////////
@@ -148,7 +174,9 @@ var user2 = {
 */
 
 //Code Here
-
+function makePerson(name, birthday, ssn) {
+    return newPerson = {name,birthday,ssn};
+}
 
 
 ////////// PROBLEM 7 //////////
@@ -159,5 +187,7 @@ var user2 = {
 */
 
 //Code Here
-
+function makeCard(cardNumber, expirationDate, securityCode) {
+  return newCard = {cardNumber, expirationDate, securityCode};
+}
 
